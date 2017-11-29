@@ -1,0 +1,41 @@
+{
+    "elmType": "div",
+    "children": [
+        {
+            "elmType": "span",
+            "txtContent": "@currentField"
+        },
+        {
+            "elmType": "a",
+            "attributes": {
+                "iconName": "MapPin",
+                "class": "sp-field-quickAction",
+				"target":"_blank",
+				"title":"Open Map",
+                "href": {
+                    "operator": "+",
+                    "operands": [
+                        "https://www.google.com/maps/place/",
+                        "@currentField"
+                    ]
+                }
+            }
+        },
+        {
+            "elmType": "a",
+            "attributes": {
+                "iconName": "MapDirections",
+                "class": "sp-field-quickAction",
+				"target":"_blank",
+				"title":"Get Directions",
+                "href": {
+                    "operator": "+",
+                    "operands": [
+                        "https://www.google.com/maps/dir//",
+                        "@currentField"
+                    ]
+                }
+            }
+        }
+    ]
+}
